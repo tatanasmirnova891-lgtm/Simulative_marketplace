@@ -23,6 +23,21 @@ Final_project/
 ├── README.md   # Документация проекта        
 └── main.py # Точка входа (запуск ETL)                
 ```
+## Автоматизация
+Исторические данные были загружены однократно с помощью скрипта `historical_pipeline.py`.
+### Ежедневный автоматизированный процесс (cron, MSK):
+1. *__06:50 — Очистка логов__*
+  * Удаляются файлы из logs старше 21 дня
+  * Предотвращение переполнения диска
+```
+50 6 * * * find /home/Simulative_marketplace/logs/ -type f -mtime +21 -delete
+```
+2. *__07:00 — ETL pipeline__*  
+  * Сбор данных за вчерашний день
+  * Загрузка в PostgreSQL marketplace
+```
+0 7 * * * /home/Simulative_marketplace/venv/bin/python main.py >> logs/cron.log 2>&1
+```
 ## Ссылки
 Metabase    
 [Исследование по товарам](https://colab.research.google.com/github/tatanasmirnova891-lgtm/Simulative_marketplace/blob/master/Research_2023/1_optimization_matrix.ipynb)    
