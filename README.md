@@ -40,5 +40,5 @@ Final_project/
 ```
 ## Ссылки
 Metabase    
-[Исследование по товарам](https://colab.research.google.com/github/tatanasmirnova891-lgtm/Simulative_marketplace/blob/master/Research_2023/1_optimization_matrix.ipynb)    
-[Исследование по покупателям](https://colab.research.google.com/github/tatanasmirnova891-lgtm/Simulative_marketplace/blob/master/Research_2023/2_customer_base.ipynb)  
+[Исследование по товарам за 2023 год](https://colab.research.google.com/github/tatanasmirnova891-lgtm/Simulative_marketplace/blob/master/Research_2023/1_optimization_matrix.ipynb)    
+[Исследование по покупателям за 2023 год](https://colab.research.google.com/github/tatanasmirnova891-lgtm/Simulative_marketplace/blob/master/Research_2023/2_customer_base.ipynb)  
