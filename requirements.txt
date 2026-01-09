@@ -134,7 +134,6 @@ python-dotenv==1.0.1
 python-multipart==0.0.20
 python-slugify==8.0.4
 pytz==2025.2
-pywin32==311
 PyYAML==6.0.3
 pyzmq==27.0.2
 referencing==0.37.0
