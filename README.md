@@ -22,4 +22,8 @@ Final_project/
 ├── logs/   # Лог-файлы выполнения пайплайна
 ├── README.md   # Документация проекта        
 └── main.py # Точка входа (запуск ETL)                
-```text
+```
+## Ссылки
+Metabase    
+[Исследование по товарам](https://colab.research.google.com/github/tatanasmirnova891-lgtm/Simulative_marketplace/blob/master/Research_2023/1_optimization_matrix.ipynb)    
+[Исследование по покупателям](https://colab.research.google.com/github/tatanasmirnova891-lgtm/Simulative_marketplace/blob/master/Research_2023/2_customer_base.ipynb)  
