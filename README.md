@@ -36,7 +36,7 @@ Simulative_marketplace/
   * Сбор данных за вчерашний день
   * Загрузка в PostgreSQL marketplace
 ```
-0 7 * * * /home/Simulative_marketplace/venv/bin/python main.py >> logs/cron.log 2>&1
+0 7 * * * cd /home/Simulative_marketplace && /home/Simulative_marketplace/venv/bin/python main.py >> /home/Simulative_marketplace/logs/cron.log 2>&1
 ```
 ## Ссылки
 [Дашборд Metabase](http://194.67.127.254:3001/dashboard/2-dashbord-operativnogo-otslezhivaniya-met#refresh=300)    
