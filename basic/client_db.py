@@ -3,12 +3,21 @@ import psycopg2
 from psycopg2.extras import execute_values
 from basic.logger import get_logger
 from typing import List, Dict, Any
-from datetime import datetime
+from pathlib import Path
+from dotenv import load_dotenv
 
 
 class PostgreSQLStorage:
     def __init__(self, service_name: str = "ETL_Storage"):
-        self.logger = get_logger(service_name)
+        # ✅ КРИТИЧНО: Загрузка config ПЕРЕД подключением!
+        config_path = Path("config/config.env")
+        if config_path.exists():
+            load_dotenv(config_path)
+            self.logger = get_logger(service_name)
+            self.logger.info(f"✅ Config загружен: {config_path}")
+        else:
+            raise FileNotFoundError(f"❌ config/config.env НЕ НАЙДЕН: {config_path}")
+        
         self._init_connection()
         self.ensure_tables_exist()
     
