@@ -39,6 +39,6 @@ Simulative_marketplace/
 0 7 * * * cd /home/Simulative_marketplace && /home/Simulative_marketplace/venv/bin/python main.py >> /home/Simulative_marketplace/logs/cron.log 2>&1
 ```
 ## Ссылки
-[Дашборд Metabase](http://194.67.127.254:3001/dashboard/2-dashbord-operativnogo-otslezhivaniya-met#refresh=300)    
+[Дашборд Metabase](http://194.67.127.254:3001/public/dashboard/dd443618-d77f-4a5e-bc01-b57abd583bab#refresh=N)    
 [Исследование по товарам за 2023 год](https://colab.research.google.com/github/tatanasmirnova891-lgtm/Simulative_marketplace/blob/master/Research_2023/1_optimization_matrix.ipynb)    
 [Исследование по покупателям за 2023 год](https://colab.research.google.com/github/tatanasmirnova891-lgtm/Simulative_marketplace/blob/master/Research_2023/2_customer_base.ipynb)  
